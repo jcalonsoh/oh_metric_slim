@@ -5,6 +5,7 @@
 # Copyright 2014 Gap Inc.
 
 require 'thor'
+require 'launchy'
 require 'oh_metric_slim'
 
 module OhMetricSlim
@@ -23,6 +24,11 @@ module OhMetricSlim
     desc 'hello NAME', 'Display greeting with given NAME'
     def hello(name=nil)
       puts "Hello World! =), #{name}"
+    end
+
+    desc 'show os', "Look which OS you are standing"
+    def showos
+      puts Launchy::Application.new.host_os_family
     end
   end
 end

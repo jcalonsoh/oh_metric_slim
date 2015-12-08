@@ -10,9 +10,5 @@ module OhMetricSlim
     def os
       Launchy::Application.new.host_os_family
     end
-    desc 'show os', "Look which OS you are standing"
-    def showos
-      puts Launchy::Application.new.host_os_family
-    end
   end
 end
