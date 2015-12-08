@@ -22,8 +22,13 @@ module OhMetricSlim
     end
 
     desc 'show os', "Look which OS you are standing"
-    def showos
+    def os
       puts OhMetricSlim::OS
+    end
+
+    desc 'show cpu', "Will show the CPU % Used"
+    def cpu
+      puts OhMetricSlim::CPU_USED
     end
   end
 end
