@@ -13,6 +13,6 @@ module OhMetricSlim
     when /darwin|Darwin/i
       OS = 'MAC OS X'
     else
-      OS = Launchy::Application.new.host_os_family
+      OS = Gem::Platform.local.os
   end
 end
