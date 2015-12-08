@@ -5,10 +5,10 @@ module OhMetricSlim
     attr_reader :value
 
     def value
-      @value ||= show
+      @value ||= value_finder
     end
 
-    def show
+    def value_finder
       case Gem::Platform.local.os
         # when /mswin|windows/i
         #   cpu = 'Data Unavailable'
@@ -19,10 +19,9 @@ module OhMetricSlim
         when /darwin/i
           cpu = `top -l1 | awk '/CPU usage/'`
           cpu = cpu.gsub(/[\,a-zA-Z:]/, "").split(" ")
-          puts cpu[0].to_f
-        else
-          puts 'Data Unavailable'
+          cpu[0].to_f
       end
+      @value = cpu
     end
 
   end

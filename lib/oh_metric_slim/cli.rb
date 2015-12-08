@@ -21,12 +21,12 @@ module OhMetricSlim
       puts "Hello World! =), #{name}"
     end
 
-    desc 'show os', "Look which OS you are standing"
+    desc 'os', "Look which OS you are standing"
     def os
       puts OhMetricSlim::OS
     end
 
-    desc 'show cpu', "Will show the CPU % Used"
+    desc 'cpu', "Will show the CPU % Used"
     def cpu
       puts OhMetricSlim::CPU.value
     end
