@@ -2,6 +2,8 @@
 
 module OhMetricSlim
   class cpu
+    attr_reader :value
+
     def value
       @value ||= show
     end
@@ -22,5 +24,6 @@ module OhMetricSlim
           cpu = 'Data Unavailable'
       end
     end
+
   end
 end
