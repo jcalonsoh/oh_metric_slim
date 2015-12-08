@@ -21,7 +21,6 @@ module OhMetricSlim
           cpu = cpu.gsub(/[\,a-zA-Z:]/, "").split(" ")
           cpu[0].to_f
       end
-      @value = cpu
     end
 
   end
