@@ -3,6 +3,10 @@
 module OhMetricSlim
   class cpu
     def value
+      @value ||= show
+    end
+
+    def show
       case Gem::Platform.local.os
         when /mswin|windows/i
           cpu = 'Data Unavailable'
