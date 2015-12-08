@@ -28,7 +28,8 @@ module OhMetricSlim
 
     desc 'cpu', "Will show the CPU % Used"
     def cpu
-      OhMetricSlim::CPU.new.value
+      value = OhMetricSlim::CPU.new.value
+      puts "It's being used #{value}"
     end
   end
 end
