@@ -13,6 +13,6 @@ module OhMetricSlim
     when /darwin/i
       OS = 'MAC OS X'
     else
-      OS = 'Undifined'
+      OS = Launchy::Application.new.host_os_family
   end
 end
