@@ -10,7 +10,7 @@ module OhMetricSlim
       OS =  'Linux'
     when /sunos|solaris/i
       OS = 'Solaris'
-    when /darwin/i
+    when /darwin|Darwin/i
       OS = 'MAC OS X'
     else
       OS = Launchy::Application.new.host_os_family
