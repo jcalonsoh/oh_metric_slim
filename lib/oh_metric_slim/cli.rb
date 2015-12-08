@@ -1,11 +1,6 @@
 # Encoding: utf-8
-#
-# Authors:: Juan Carlos Alonso (<juan_carlos_alonso_holmstron@gap.com>), Jose Ventura (<jose_ventura@gap.com>)
-#
-# Copyright 2014 Gap Inc.
 
 require 'thor'
-require 'launchy'
 require 'oh_metric_slim'
 
 module OhMetricSlim
@@ -28,7 +23,7 @@ module OhMetricSlim
 
     desc 'show os', "Look which OS you are standing"
     def showos
-      puts Launchy::Application.new.host_os_family
+      puts OhMetricSlim::OS
     end
   end
 end
