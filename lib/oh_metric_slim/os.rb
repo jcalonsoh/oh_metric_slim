@@ -3,5 +3,5 @@
 require 'launchy'
 
 module OhMetricSlim
-  OS = Launchy::Application.new.host_os_family
+  OS = Launchy.host_os
 end
