@@ -19,7 +19,7 @@ module OhMetricSlim
         when /darwin/i
           cpu = `top -l1 | awk '/CPU usage/'`
           cpu = cpu.gsub(/[\,a-zA-Z:]/, "").split(" ")
-          cpu = cpu[0].to_f
+          cpu[0].to_f
       end
     end
 
