@@ -1,17 +1,19 @@
 #!/usr/bin/env bash
 
-docker-machine start default
+docker-machine create oh-metricslim -d virtualbox
 
-docker-machine env default
+docker-machine start oh-metricslim
+
+docker-machine env oh-metricslim
 
 export DOCKER_TLS_VERIFY="1"
-export DOCKER_HOST="tcp://192.168.99.100:2376"
+export DOCKER_HOST="tcp://$(docker-machine ip oh-metricslim):2376"
 export DOCKER_CERT_PATH="$HOME/.docker/machine/machines/default"
 export DOCKER_MACHINE_NAME="default"
 
-eval "$(docker-machine env default)"
+eval "$(docker-machine env oh-metricslim)"
 
-echo "Docker Machine List stop & remove"
+echo "Docker Machine:: List Containers: stop & remove"
 docker ps -a -q
 sleep 5
 
