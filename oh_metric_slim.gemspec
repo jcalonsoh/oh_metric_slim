@@ -21,7 +21,7 @@ Gem::Specification.new do |spec|
   #  raise "RubyGems 2.0 or newer is required to protect against public gem pushes."
   # end
 
-  spec.files         = `git ls-files -z`.split("\x0")
+  spec.files         = `git ls-files -z`.split("\x0") + `git ls-files --others --exclude-standard -z`.split("\x0")
   spec.executables   = ['oh-metricslim']
   spec.test_files    = spec.files.grep(/^(test|spec|features)\//)
   spec.require_paths = ['lib', 'lib/oh_metric_slim']
