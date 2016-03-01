@@ -34,4 +34,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rubocop', '~> 0.35'
   spec.add_development_dependency 'aruba',  '~> 0.10'
   spec.add_development_dependency 'fakefs', '~> 0.6'
+  spec.add_development_dependency 'web-console', '~> 2.0'
+  spec.add_development_dependency 'spring', '~> 1.6'
+  spec.add_development_dependency 'ruby-debug-ide', '~> 0.6'
 end
