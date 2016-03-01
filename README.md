@@ -3,6 +3,7 @@
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/oh_metric_slim`.
 
 [![Build Status](https://travis-ci.org/jcalonsoh/oh_metric_slim.svg?branch=master)](https://travis-ci.org/jcalonsoh/oh_metric_slim)
+[![Coverage Status](https://coveralls.io/repos/github/jcalonsoh/oh_metric_slim/badge.svg?branch=master)](https://coveralls.io/github/jcalonsoh/oh_metric_slim?branch=master)
 
 ## Installation
 
