@@ -15,14 +15,13 @@ module OhMetricSlim
       case Gem::Platform.local.os
         # when /mswin|windows/i
         #   cpu = 'Data Unavailable'
-        when /linux|arch/i
-          return linux_value
+      when /linux|arch/i
+        return linux_value
         # when /sunos|solaris/i
         #   cpu = 'Data Unavailable'
-        when /darwin/i
-          return darwin_value
+      when /darwin/i
+        return darwin_value
       end
     end
-
   end
 end

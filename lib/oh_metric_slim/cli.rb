@@ -17,16 +17,16 @@ module OhMetricSlim
     end
 
     desc 'hello NAME', 'Display greeting with given NAME'
-    def hello(name=nil)
+    def hello(name = nil)
       puts "Hello World! =), #{name}"
     end
 
-    desc 'os', "Look which OS you are standing"
+    desc 'os', 'Look which OS you are standing'
     def os
       puts OhMetricSlim::OS
     end
 
-    desc 'cpu', "Will show the CPU % Used"
+    desc 'cpu', 'Will show the CPU % Used'
     def cpu
       value = OhMetricSlim::CPU_USAGE.new.value
       puts "It's being used #{value}"

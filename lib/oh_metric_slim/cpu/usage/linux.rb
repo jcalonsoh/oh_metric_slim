@@ -1,8 +1,7 @@
 def linux_value
-
-  first_measure = File.readlines('/proc/stat').grep(/^cpu /).first.split(" ")
+  first_measure = File.readlines('/proc/stat').grep(/^cpu /).first.split(' ')
   sleep 1
-  second_measure = File.readlines('/proc/stat').grep(/^cpu /).first.split(" ")
+  second_measure = File.readlines('/proc/stat').grep(/^cpu /).first.split(' ')
 
   proc_usage_sum_0 = first_measure[1].to_i + first_measure[2].to_i + first_measure[3].to_i
   proc_usage_sum_1 = second_measure[1].to_i + second_measure[2].to_i + second_measure[3].to_i
@@ -21,6 +20,5 @@ def linux_value
   cpu_usage = (proc_usage.to_f / proc_total.to_f)
   cpu_usage_percentage = (100 * cpu_usage).to_f.round(2)
 
-  return cpu_usage_percentage
-
+  cpu_usage_percentage
 end
