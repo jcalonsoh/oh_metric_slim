@@ -1,4 +1,4 @@
-require 'lib/spec_helper'
+require_relative 'lib/spec_helper'
 
 describe OhMetricSlim do
   it 'has a version number' do
