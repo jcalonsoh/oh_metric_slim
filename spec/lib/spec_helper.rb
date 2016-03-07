@@ -13,6 +13,6 @@ SimpleCov.at_exit do
   SimpleCov.result.format!
 end
 
-Coveralls.wear_merged!
+Coveralls.wear!
 
 require 'oh_metric_slim'
