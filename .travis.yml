@@ -1,6 +1,6 @@
 language: ruby
 before_install: gem install bundler -v 1.10.5
 script:
-  - bundle exec rake rspec spec
+  - bundle exec rake rspec
 after_script:
   - coveralls
