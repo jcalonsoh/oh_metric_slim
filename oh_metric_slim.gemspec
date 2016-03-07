@@ -13,14 +13,6 @@ Gem::Specification.new do |spec|
   spec.description   = 'This is one of many gem for the FW using Sensu App.'
   spec.homepage      = 'https://github.com/jcalonsoh/oh_metric_slim'
 
-  # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
-  # delete this section to allow pushing this gem to any host.
-  # if spec.respond_to?(:metadata)
-  #  spec.metadata['allowed_push_host'] = "TODO: Set to 'http://mygemserver.com'"
-  # else
-  #  raise "RubyGems 2.0 or newer is required to protect against public gem pushes."
-  # end
-
   spec.files         = `git ls-files -z`.split("\x0") + `git ls-files --others --exclude-standard -z`.split("\x0")
   spec.executables   = ['oh-metricslim']
   spec.test_files    = spec.files.grep(/^(test|spec|features)\//)
