@@ -17,7 +17,7 @@ gem 'oh_metric_slim'
 
 ## Usage
 
-TODO: Write usage instructions here
+Please visit this [Documentation site](https://oh-metrics.readme.io/v0.1.0)
 
 ## Contributing
 
