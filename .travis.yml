@@ -1,4 +1,4 @@
 language: ruby
 before_install: gem install bundler -v 1.10.5
 after_script:
-  - coveralls
+  - COVERALLS_REPO_TOKEN=QNBKhIhiAGYksEsp17QMBWk7oULOf2WJJ bundle exec rspec spec
