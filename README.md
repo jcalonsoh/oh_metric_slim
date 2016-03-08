@@ -6,6 +6,7 @@ Welcome to your new gem! In this directory, you'll find the files you need to be
 [![Coverage Status](https://coveralls.io/repos/github/jcalonsoh/oh_metric_slim/badge.svg?branch=master)](https://coveralls.io/github/jcalonsoh/oh_metric_slim?branch=master)
 [![Code Climate](https://codeclimate.com/github/jcalonsoh/oh_metric_slim/badges/gpa.svg)](https://codeclimate.com/github/jcalonsoh/oh_metric_slim)
 [![Issue Count](https://codeclimate.com/github/jcalonsoh/oh_metric_slim/badges/issue_count.svg)](https://codeclimate.com/github/jcalonsoh/oh_metric_slim)
+[![Dependency Status](https://www.versioneye.com/user/projects/56de18f7df573d0048dafc44/badge.svg?style=flat)](https://www.versioneye.com/user/projects/56de18f7df573d0048dafc44)
 
 ## Installation
 
