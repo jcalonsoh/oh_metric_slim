@@ -16,7 +16,7 @@ module OhMetricSlim
     end
 
     def self.value
-      case OhMetricSlim::OS
+      case Gem::Platform.local.os
         # when /mswin|windows/i
         #   cpu = 'Data Unavailable'
       when /linux|arch/i

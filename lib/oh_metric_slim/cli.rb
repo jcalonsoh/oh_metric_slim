@@ -23,7 +23,7 @@ module OhMetricSlim
 
     desc 'os', 'Look which OS you are standing'
     def os
-      puts OhMetricSlim::OS
+      puts Gem::Platform.local.os
     end
 
     desc 'cpu', 'Will show the CPU % Used'
