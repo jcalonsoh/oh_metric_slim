@@ -15,7 +15,7 @@ Add this line to your application's Gemfile:
 ```ruby
 gem 'oh_metric_slim'
 ```
-
+duda
 ## Usage
 
 Please visit this [Documentation site](https://oh-metrics.readme.io/v0.1.0)
